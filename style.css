@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+/*--------------------------------
+全体
+---------------------------------*/
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  color: var(--color-font-base);
+  background-color: #C1272D;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ------------------------------
+カスタムプロパティ 
+------------------------------ */
+
+/* カラー */
+:root {
+  --color-A: #C1272D;
+  --color-B: #FFC53A;
+  --color-C: #113355;
+  --color-D: #FFFFFF;
+  --color-font-base: #113355;
+}
+
+/* コンテナ幅 */
+:root {
+  --width-content: 944px;
+}
+
+/* ------------------------------
+共通クラス
+------------------------------ */
+
+.bg {
+  background-color: #FFC53A;
+  min-height: 100vh;
+  background-attachment: fixed;
+  max-width: 1184px;
+  width: 90%;
+  margin: auto;
+}
+
+.container {
+  max-width: var(--width-content);
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav li {
+  width: 32%;
+  height: 52px;
+}
+
+.nav-item {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  letter-spacing: 1.5px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 20px;
+  line-height: 52px;
+  width: 100%;
+  font-size: 29px;
+  color: var(--color-D);
+  border: var(--color-C) 3px solid;
+  background-color: var(--color-C);
+  transition: 0.3s;
+}
+
+.nav-item:hover {
+  border: var(--color-A) 3px solid;
+}
+
+/* ------------------------------
+header
+------------------------------ */
+
+.header {
+  padding: 90px 0 70px;
+}
+
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 38px;
+}
+
+.logo {
+  max-width: 174px;
+  width: 30%;
+}
+
+.line {
+  width: 30%;
+}
+
+/* ------------------------------
+menu
+------------------------------ */
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.menu-category {
+  font-family: 'Modak', cursive;
+  font-size: 40px;
+  color: var(--color-A);
+}
+
+.menu-item {
+  width: 47%;
+}
+
+.menu-item:nth-last-child(-n+2) {
+  margin-top: 90px;
+}
+
+.menu-list {
+  line-height: 1.4;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 26px;
+}
+
+.menu-list dt {
+  width: 80%;
+}
+
+.menu-list dd {
+  font-weight: bold;
+  width: 20%;
+  text-align: right;
+}
+
+/* ------------------------------
+access
+------------------------------ */
+
+.access {
+  text-align: center;
+}
+
+.access-text {
+  font-size: 18px;
+  margin-top: 60px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid var(--color-font-base);
+}
+
+.adress {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+/* ------------------------------
+footer
+------------------------------ */
+
+.footer {
+  padding: 60px 0;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
